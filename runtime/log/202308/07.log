@@ -1,0 +1,1011 @@
+---------------------------------------------------------------
+[ 2023-08-07T17:39:16+08:00 ] 0.0.0.0 GET localhost/
+[运行时间：0.818724s] [吞吐率：1.22req/s] [内存消耗：2,864.43kb] [文件加载：50]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Actions @app_init [ RunTime:0.328201s ]
+[ info ] [ LANG ] D:\nodcloud-master\nodcloud-master\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'session_id=7448073671f0a461993de8ef9b4f42d56671181a',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'none',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'sec-ch-ua-platform' => '"Windows"',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-ch-ua' => '"Not/A)Brand";v="99", "Google Chrome";v="115", "Chromium";v="115"',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\nodcloud-master\nodcloud-master\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\nodcloud-master\nodcloud-master/application/index\view\index\index.html [ array (
+  0 => 'ver',
+  1 => 'sys_name',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.022234s ] mysql:host=127.0.0.1;port=3306;dbname=node_cloud;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_action` [ RunTime:0.074457s ]
+[ sql ] [ SQL ] SELECT * FROM `is_action` WHERE  `pid` <> 0  AND `state` = 1 [ RunTime:0.071950s ]
+[ sql ] [ SQL ] SELECT * FROM `is_action` WHERE  `id` IN (1) [ RunTime:0.000658s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_sys` [ RunTime:0.003514s ]
+[ sql ] [ SQL ] SELECT `name`,`info` FROM `is_sys` WHERE  `name` IN ('sys_name') [ RunTime:0.022462s ]
+---------------------------------------------------------------
+[ 2023-08-07T17:39:18+08:00 ] 0.0.0.0 POST localhost/index/index/check_user
+[运行时间：0.367737s] [吞吐率：2.72req/s] [内存消耗：2,986.55kb] [文件加载：54]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Actions @app_init [ RunTime:0.019141s ]
+[ info ] [ LANG ] D:\nodcloud-master\nodcloud-master\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'check_user',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'session_id=7448073671f0a461993de8ef9b4f42d56671181a',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'origin' => 'http://localhost',
+  'sec-ch-ua-platform' => '"Windows"',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36',
+  'sec-ch-ua-mobile' => '?0',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => '*/*',
+  'sec-ch-ua' => '"Not/A)Brand";v="99", "Google Chrome";v="115", "Chromium";v="115"',
+  'content-length' => '16',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/check_user' => '',
+  'user' => 'liu',
+  'pwd' => 'liu',
+)
+[ info ] [ RUN ] app\index\controller\Index->check_user[ D:\nodcloud-master\nodcloud-master\application\index\controller\Index.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001134s ] mysql:host=127.0.0.1;port=3306;dbname=node_cloud;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_action` [ RunTime:0.003228s ]
+[ sql ] [ SQL ] SELECT * FROM `is_action` WHERE  `pid` <> 0  AND `state` = 1 [ RunTime:0.000539s ]
+[ sql ] [ SQL ] SELECT * FROM `is_action` WHERE  `id` IN (1) [ RunTime:0.000429s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_user` [ RunTime:0.003310s ]
+[ sql ] [ SQL ] SELECT * FROM `is_user` WHERE  `user` = 'liu'  AND `pwd` = '9d4d6204ee943564637f06093236b181' LIMIT 1 [ RunTime:0.014892s ]
+[ sql ] [ SQL ] UPDATE `is_user`  SET `token`='hEkqs7p44OFBEL3AsUHWHrvbGmg6Cn'  WHERE  `id` = 3 [ RunTime:0.155648s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_log` [ RunTime:0.003475s ]
+[ sql ] [ SQL ] INSERT INTO `is_log` (`text` , `user` , `time` , `merchant`) VALUES ('登录系统成功' , 3 , 1691401158 , 1) [ RunTime:0.069305s ]
+---------------------------------------------------------------
+[ 2023-08-07T17:39:18+08:00 ] 0.0.0.0 GET localhost/
+[运行时间：0.060904s] [吞吐率：16.42req/s] [内存消耗：2,850.35kb] [文件加载：48]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Actions @app_init [ RunTime:0.018950s ]
+[ info ] [ LANG ] D:\nodcloud-master\nodcloud-master\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'session_id=7448073671f0a461993de8ef9b4f42d56671181a; Nod_User_Id=3; Nod_User_Token=hEkqs7p44OFBEL3AsUHWHrvbGmg6Cn; PHPSESSID=kccsos3ijr8nomsa3ghkekgmij',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'sec-ch-ua-platform' => '"Windows"',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-ch-ua' => '"Not/A)Brand";v="99", "Google Chrome";v="115", "Chromium";v="115"',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\nodcloud-master\nodcloud-master\application\index\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001075s ] mysql:host=127.0.0.1;port=3306;dbname=node_cloud;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_action` [ RunTime:0.003303s ]
+[ sql ] [ SQL ] SELECT * FROM `is_action` WHERE  `pid` <> 0  AND `state` = 1 [ RunTime:0.000540s ]
+[ sql ] [ SQL ] SELECT * FROM `is_action` WHERE  `id` IN (1) [ RunTime:0.000381s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_user` [ RunTime:0.003291s ]
+[ sql ] [ SQL ] SELECT * FROM `is_user` WHERE  `id` = 3  AND `token` = 'hEkqs7p44OFBEL3AsUHWHrvbGmg6Cn' LIMIT 1 [ RunTime:0.014425s ]
+---------------------------------------------------------------
+[ 2023-08-07T17:39:18+08:00 ] 0.0.0.0 GET localhost/main.html
+[运行时间：0.153268s] [吞吐率：6.52req/s] [内存消耗：3,032.63kb] [文件加载：54]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Actions @app_init [ RunTime:0.019335s ]
+[ info ] [ LANG ] D:\nodcloud-master\nodcloud-master\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'main',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'session_id=7448073671f0a461993de8ef9b4f42d56671181a; Nod_User_Id=3; Nod_User_Token=hEkqs7p44OFBEL3AsUHWHrvbGmg6Cn; PHPSESSID=kccsos3ijr8nomsa3ghkekgmij',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/',
+  'sec-ch-ua-platform' => '"Windows"',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-ch-ua' => '"Not/A)Brand";v="99", "Google Chrome";v="115", "Chromium";v="115"',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  '/main_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Main->index[ D:\nodcloud-master\nodcloud-master\application\index\controller\Main.php ]
+[ info ] [ VIEW ] D:\nodcloud-master\nodcloud-master/application/index\view\main\index.html [ array (
+  0 => 'menu',
+  1 => 'sys_name',
+  2 => 'user_info',
+) ]
+[ info ] [ BEHAVIOR ] Run addons\pagemore\controller\main @pagemore [ RunTime:0.006758s ]
+[ info ] [ BEHAVIOR ] Run addons\pagemore\controller\main @pagemore [ RunTime:0.000469s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001009s ] mysql:host=127.0.0.1;port=3306;dbname=node_cloud;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_action` [ RunTime:0.003137s ]
+[ sql ] [ SQL ] SELECT * FROM `is_action` WHERE  `pid` <> 0  AND `state` = 1 [ RunTime:0.001134s ]
+[ sql ] [ SQL ] SELECT * FROM `is_action` WHERE  `id` IN (1) [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_user` [ RunTime:0.003419s ]
+[ sql ] [ SQL ] SELECT * FROM `is_user` WHERE  `id` = 3  AND `token` = 'hEkqs7p44OFBEL3AsUHWHrvbGmg6Cn' LIMIT 1 [ RunTime:0.000458s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_menu` [ RunTime:0.003290s ]
+[ sql ] [ SQL ] SELECT * FROM `is_menu` ORDER BY `sort` ASC [ RunTime:0.000629s ]
+[ sql ] [ SQL ] SELECT * FROM `is_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_root` [ RunTime:0.003090s ]
+[ sql ] [ SQL ] SELECT * FROM `is_root` WHERE  `pid` = 3 [ RunTime:0.012412s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_sys` [ RunTime:0.003279s ]
+[ sql ] [ SQL ] SELECT `name`,`info` FROM `is_sys` WHERE  `name` IN ('sys_name') [ RunTime:0.000461s ]
+[ sql ] [ SQL ] SELECT * FROM `is_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000416s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_pagemore` [ RunTime:0.003444s ]
+[ sql ] [ SQL ] SELECT * FROM `is_pagemore` WHERE  `name` = 'public'  AND `type` = 'css' LIMIT 1 [ RunTime:0.000452s ]
+[ sql ] [ SQL ] SELECT * FROM `is_pagemore` WHERE  `name` = 'public'  AND `type` = 'js' LIMIT 1 [ RunTime:0.000344s ]
+---------------------------------------------------------------
+[ 2023-08-07T17:39:19+08:00 ] 0.0.0.0 GET localhost/index/main/home.html
+[运行时间：0.571289s] [吞吐率：1.75req/s] [内存消耗：3,237.88kb] [文件加载：63]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Actions @app_init [ RunTime:0.020557s ]
+[ info ] [ LANG ] D:\nodcloud-master\nodcloud-master\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'main',
+    2 => 'home',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'session_id=7448073671f0a461993de8ef9b4f42d56671181a; Nod_User_Id=3; Nod_User_Token=hEkqs7p44OFBEL3AsUHWHrvbGmg6Cn; PHPSESSID=kccsos3ijr8nomsa3ghkekgmij',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/main.html',
+  'sec-fetch-dest' => 'iframe',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'sec-ch-ua-platform' => '"Windows"',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-ch-ua' => '"Not/A)Brand";v="99", "Google Chrome";v="115", "Chromium";v="115"',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  '/index/main/home_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Main->home[ D:\nodcloud-master\nodcloud-master\application\index\controller\Main.php ]
+[ info ] [ VIEW ] D:\nodcloud-master\nodcloud-master/application/index\view\main\home.html [ array (
+  0 => 'often',
+  1 => 'sys',
+  2 => 'account',
+  3 => 'customer',
+  4 => 'supplier',
+  5 => 'room',
+  6 => 'user',
+  7 => 'roomwarning_nums',
+  8 => 'day_arr',
+  9 => 'echarts_data',
+) ]
+[ info ] [ BEHAVIOR ] Run addons\pagemore\controller\main @pagemore [ RunTime:0.004752s ]
+[ info ] [ BEHAVIOR ] Run addons\pagemore\controller\main @pagemore [ RunTime:0.000437s ]
+[ info ] [ BEHAVIOR ] Run addons\pagemore\controller\main @pagemore [ RunTime:0.000428s ]
+[ info ] [ BEHAVIOR ] Run addons\pagemore\controller\main @pagemore [ RunTime:0.003063s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001050s ] mysql:host=127.0.0.1;port=3306;dbname=node_cloud;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_action` [ RunTime:0.004558s ]
+[ sql ] [ SQL ] SELECT * FROM `is_action` WHERE  `pid` <> 0  AND `state` = 1 [ RunTime:0.000846s ]
+[ sql ] [ SQL ] SELECT * FROM `is_action` WHERE  `id` IN (1) [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_user` [ RunTime:0.003918s ]
+[ sql ] [ SQL ] SELECT * FROM `is_user` WHERE  `id` = 3  AND `token` = 'hEkqs7p44OFBEL3AsUHWHrvbGmg6Cn' LIMIT 1 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_often` [ RunTime:0.003864s ]
+[ sql ] [ SQL ] SELECT * FROM `is_often` [ RunTime:0.000508s ]
+[ sql ] [ SQL ] SELECT * FROM `is_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000801s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_auth` [ RunTime:0.003585s ]
+[ sql ] [ SQL ] SELECT * FROM `is_auth` WHERE  `pid` = 3 [ RunTime:0.015890s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_room` [ RunTime:0.003343s ]
+[ sql ] [ SQL ] SELECT * FROM `is_room` [ RunTime:0.000323s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_sys` [ RunTime:0.002945s ]
+[ sql ] [ SQL ] SELECT `name`,`info` FROM `is_sys` WHERE  `name` IN ('form_day','notice') [ RunTime:0.020404s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_purchaseclass` [ RunTime:0.003844s ]
+[ sql ] [ SQL ] SELECT `time`,`total` FROM `is_purchaseclass` WHERE  `time` IN (1690819200,1690905600,1690992000,1691078400,1691164800,1691251200,1691337600)  AND `type` = 1 [ RunTime:0.016769s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_rpurchaseclass` [ RunTime:0.003674s ]
+[ sql ] [ SQL ] SELECT `time`,`total` FROM `is_rpurchaseclass` WHERE  `time` IN (1690819200,1690905600,1690992000,1691078400,1691164800,1691251200,1691337600)  AND `type` = 1 [ RunTime:0.020703s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_saleclass` [ RunTime:0.003371s ]
+[ sql ] [ SQL ] SELECT `time`,`total` FROM `is_saleclass` WHERE  `time` IN (1690819200,1690905600,1690992000,1691078400,1691164800,1691251200,1691337600)  AND `type` = 1 [ RunTime:0.015424s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_cashierclass` [ RunTime:0.003920s ]
+[ sql ] [ SQL ] SELECT `time`,`total` FROM `is_cashierclass` WHERE  `time` IN (1690819200,1690905600,1690992000,1691078400,1691164800,1691251200,1691337600)  AND `type` = 1 [ RunTime:0.019708s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_itemorderclass` [ RunTime:0.003489s ]
+[ sql ] [ SQL ] SELECT `time`,`total` FROM `is_itemorderclass` WHERE  `time` IN (1690819200,1690905600,1690992000,1691078400,1691164800,1691251200,1691337600)  AND `type` = 1 [ RunTime:0.015294s ]
+[ sql ] [ SQL ] SELECT * FROM `is_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000480s ]
+[ sql ] [ SQL ] SELECT * FROM `is_auth` WHERE  `pid` = 3 [ RunTime:0.000418s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_account` [ RunTime:0.003611s ]
+[ sql ] [ SQL ] SELECT SUM(balance) AS tp_sum FROM `is_account` LIMIT 1 [ RunTime:0.000685s ]
+[ sql ] [ SQL ] SELECT * FROM `is_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000434s ]
+[ sql ] [ SQL ] SELECT * FROM `is_auth` WHERE  `pid` = 3 [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_customer` [ RunTime:0.003349s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `is_customer` LIMIT 1 [ RunTime:0.000628s ]
+[ sql ] [ SQL ] SELECT * FROM `is_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SELECT * FROM `is_auth` WHERE  `pid` = 3 [ RunTime:0.000418s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_supplier` [ RunTime:0.003093s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `is_supplier` LIMIT 1 [ RunTime:0.010959s ]
+[ sql ] [ SQL ] SELECT * FROM `is_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000504s ]
+[ sql ] [ SQL ] SELECT * FROM `is_auth` WHERE  `pid` = 3 [ RunTime:0.000365s ]
+[ sql ] [ SQL ] SELECT SUM(nums) AS tp_sum FROM `is_room` LIMIT 1 [ RunTime:0.000314s ]
+[ sql ] [ SQL ] SELECT * FROM `is_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000327s ]
+[ sql ] [ SQL ] SELECT * FROM `is_auth` WHERE  `pid` = 3 [ RunTime:0.000325s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `is_user` LIMIT 1 [ RunTime:0.000298s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_pagemore` [ RunTime:0.003273s ]
+[ sql ] [ SQL ] SELECT * FROM `is_pagemore` WHERE  `name` = 'extend'  AND `type` = 'css' LIMIT 1 [ RunTime:0.000375s ]
+[ sql ] [ SQL ] SELECT * FROM `is_pagemore` WHERE  `name` = 'extend'  AND `type` = 'js' LIMIT 1 [ RunTime:0.000335s ]
+[ sql ] [ SQL ] SELECT * FROM `is_pagemore` WHERE  `name` = 'index|main|home'  AND `type` = 'css' LIMIT 1 [ RunTime:0.000326s ]
+[ sql ] [ SQL ] SHOW TABLE STATUS FROM node_cloud [ RunTime:0.170862s ]
+[ sql ] [ SQL ] select VERSION() as ver [ RunTime:0.019885s ]
+[ sql ] [ SQL ] SELECT * FROM `is_pagemore` WHERE  `name` = 'index|main|home'  AND `type` = 'js' LIMIT 1 [ RunTime:0.002891s ]
+---------------------------------------------------------------
+[ 2023-08-07T17:39:24+08:00 ] 0.0.0.0 GET localhost/index/root/main.html
+[运行时间：0.231314s] [吞吐率：4.32req/s] [内存消耗：2,926.70kb] [文件加载：53]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Actions @app_init [ RunTime:0.018540s ]
+[ info ] [ LANG ] D:\nodcloud-master\nodcloud-master\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'root',
+    2 => 'main',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'session_id=7448073671f0a461993de8ef9b4f42d56671181a; Nod_User_Id=3; Nod_User_Token=hEkqs7p44OFBEL3AsUHWHrvbGmg6Cn; PHPSESSID=kccsos3ijr8nomsa3ghkekgmij',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/main.html',
+  'sec-fetch-dest' => 'iframe',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'sec-ch-ua-platform' => '"Windows"',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-ch-ua' => '"Not/A)Brand";v="99", "Google Chrome";v="115", "Chromium";v="115"',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  '/index/root/main_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Root->main[ D:\nodcloud-master\nodcloud-master\application\index\controller\Root.php ]
+[ info ] [ VIEW ] D:\nodcloud-master\nodcloud-master/application/index\view\root\main.html [ array (
+) ]
+[ info ] [ BEHAVIOR ] Run addons\pagemore\controller\main @pagemore [ RunTime:0.005222s ]
+[ info ] [ BEHAVIOR ] Run addons\pagemore\controller\main @pagemore [ RunTime:0.000467s ]
+[ info ] [ BEHAVIOR ] Run addons\pagemore\controller\main @pagemore [ RunTime:0.000431s ]
+[ info ] [ BEHAVIOR ] Run addons\pagemore\controller\main @pagemore [ RunTime:0.000852s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001071s ] mysql:host=127.0.0.1;port=3306;dbname=node_cloud;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_action` [ RunTime:0.003122s ]
+[ sql ] [ SQL ] SELECT * FROM `is_action` WHERE  `pid` <> 0  AND `state` = 1 [ RunTime:0.000426s ]
+[ sql ] [ SQL ] SELECT * FROM `is_action` WHERE  `id` IN (1) [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_user` [ RunTime:0.003260s ]
+[ sql ] [ SQL ] SELECT * FROM `is_user` WHERE  `id` = 3  AND `token` = 'hEkqs7p44OFBEL3AsUHWHrvbGmg6Cn' LIMIT 1 [ RunTime:0.000450s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_pagemore` [ RunTime:0.003534s ]
+[ sql ] [ SQL ] SELECT * FROM `is_pagemore` WHERE  `name` = 'extend'  AND `type` = 'css' LIMIT 1 [ RunTime:0.000446s ]
+[ sql ] [ SQL ] SELECT * FROM `is_pagemore` WHERE  `name` = 'extend'  AND `type` = 'js' LIMIT 1 [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SELECT * FROM `is_pagemore` WHERE  `name` = 'index|root|main'  AND `type` = 'css' LIMIT 1 [ RunTime:0.000326s ]
+[ sql ] [ SQL ] SELECT * FROM `is_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000334s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_root` [ RunTime:0.002991s ]
+[ sql ] [ SQL ] SELECT * FROM `is_root` WHERE  `pid` = 3 [ RunTime:0.001042s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_formfield` [ RunTime:0.003217s ]
+[ sql ] [ SQL ] SELECT * FROM `is_formfield` WHERE  `key` = 'root_form' LIMIT 1 [ RunTime:0.000444s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_formfieldinfo` [ RunTime:0.003264s ]
+[ sql ] [ SQL ] SELECT * FROM `is_formfieldinfo` WHERE  `pid` = 26  AND `show` = 1 ORDER BY `id` ASC [ RunTime:0.040611s ]
+[ sql ] [ SQL ] SELECT * FROM `is_pagemore` WHERE  `name` = 'index|root|main'  AND `type` = 'js' LIMIT 1 [ RunTime:0.000698s ]
+---------------------------------------------------------------
+[ 2023-08-07T17:39:24+08:00 ] 0.0.0.0 POST localhost/index/service/merchant_list
+[运行时间：0.095485s] [吞吐率：10.47req/s] [内存消耗：3,327.42kb] [文件加载：53]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Actions @app_init [ RunTime:0.019236s ]
+[ info ] [ LANG ] D:\nodcloud-master\nodcloud-master\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'service',
+    2 => 'merchant_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'session_id=7448073671f0a461993de8ef9b4f42d56671181a; Nod_User_Id=3; Nod_User_Token=hEkqs7p44OFBEL3AsUHWHrvbGmg6Cn; PHPSESSID=kccsos3ijr8nomsa3ghkekgmij',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/index/root/main.html',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'origin' => 'http://localhost',
+  'sec-ch-ua-platform' => '"Windows"',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36',
+  'sec-ch-ua-mobile' => '?0',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'sec-ch-ua' => '"Not/A)Brand";v="99", "Google Chrome";v="115", "Chromium";v="115"',
+  'content-length' => '20',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  '/index/service/merchant_list' => '',
+  'page' => '1',
+  'limit' => '5',
+  'data' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Service->merchant_list[ D:\nodcloud-master\nodcloud-master\application\index\controller\Service.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001313s ] mysql:host=127.0.0.1;port=3306;dbname=node_cloud;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_action` [ RunTime:0.003465s ]
+[ sql ] [ SQL ] SELECT * FROM `is_action` WHERE  `pid` <> 0  AND `state` = 1 [ RunTime:0.000540s ]
+[ sql ] [ SQL ] SELECT * FROM `is_action` WHERE  `id` IN (1) [ RunTime:0.000421s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_user` [ RunTime:0.003522s ]
+[ sql ] [ SQL ] SELECT * FROM `is_user` WHERE  `id` = 3  AND `token` = 'hEkqs7p44OFBEL3AsUHWHrvbGmg6Cn' LIMIT 1 [ RunTime:0.000474s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_merchant` [ RunTime:0.003085s ]
+[ sql ] [ SQL ] SELECT * FROM `is_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000355s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_auth` [ RunTime:0.002947s ]
+[ sql ] [ SQL ] SELECT * FROM `is_auth` WHERE  `pid` = 3 [ RunTime:0.000446s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `is_merchant` LIMIT 1 [ RunTime:0.000494s ]
+[ sql ] [ SQL ] SELECT * FROM `is_merchant` ORDER BY `id` DESC LIMIT 0,5 [ RunTime:0.000455s ]
+---------------------------------------------------------------
+[ 2023-08-07T17:39:25+08:00 ] 0.0.0.0 POST localhost/index/root/root_list
+[运行时间：0.059001s] [吞吐率：16.95req/s] [内存消耗：2,916.66kb] [文件加载：54]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Actions @app_init [ RunTime:0.018923s ]
+[ info ] [ LANG ] D:\nodcloud-master\nodcloud-master\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'root',
+    2 => 'root_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'session_id=7448073671f0a461993de8ef9b4f42d56671181a; Nod_User_Id=3; Nod_User_Token=hEkqs7p44OFBEL3AsUHWHrvbGmg6Cn; PHPSESSID=kccsos3ijr8nomsa3ghkekgmij',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/index/root/main.html',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'origin' => 'http://localhost',
+  'sec-ch-ua-platform' => '"Windows"',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36',
+  'sec-ch-ua-mobile' => '?0',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'sec-ch-ua' => '"Not/A)Brand";v="99", "Google Chrome";v="115", "Chromium";v="115"',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  '/index/root/root_list' => '',
+  'page' => '1',
+  'limit' => '30',
+  'user' => '',
+  'name' => '',
+  'merchant' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Root->root_list[ D:\nodcloud-master\nodcloud-master\application\index\controller\Root.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001102s ] mysql:host=127.0.0.1;port=3306;dbname=node_cloud;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_action` [ RunTime:0.003691s ]
+[ sql ] [ SQL ] SELECT * FROM `is_action` WHERE  `pid` <> 0  AND `state` = 1 [ RunTime:0.000597s ]
+[ sql ] [ SQL ] SELECT * FROM `is_action` WHERE  `id` IN (1) [ RunTime:0.000486s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_user` [ RunTime:0.004011s ]
+[ sql ] [ SQL ] SELECT * FROM `is_user` WHERE  `id` = 3  AND `token` = 'hEkqs7p44OFBEL3AsUHWHrvbGmg6Cn' LIMIT 1 [ RunTime:0.000495s ]
+[ sql ] [ SQL ] SELECT * FROM `is_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000439s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_auth` [ RunTime:0.003060s ]
+[ sql ] [ SQL ] SELECT * FROM `is_auth` WHERE  `pid` = 3 [ RunTime:0.000369s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `is_user` WHERE  `type` = 0 LIMIT 1 [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SELECT * FROM `is_user` WHERE  `type` = 0 ORDER BY `id` DESC LIMIT 0,30 [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_merchant` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `is_merchant` WHERE  `id` IN (1) [ RunTime:0.000376s ]
+---------------------------------------------------------------
+[ 2023-08-07T17:39:38+08:00 ] 0.0.0.0 GET localhost/index/opurchase/main.html
+[运行时间：0.197182s] [吞吐率：5.07req/s] [内存消耗：2,981.32kb] [文件加载：53]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Actions @app_init [ RunTime:0.020905s ]
+[ info ] [ LANG ] D:\nodcloud-master\nodcloud-master\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'opurchase',
+    2 => 'main',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'session_id=7448073671f0a461993de8ef9b4f42d56671181a; Nod_User_Id=3; Nod_User_Token=hEkqs7p44OFBEL3AsUHWHrvbGmg6Cn; PHPSESSID=kccsos3ijr8nomsa3ghkekgmij',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/main.html',
+  'sec-fetch-dest' => 'iframe',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'sec-ch-ua-platform' => '"Windows"',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-ch-ua' => '"Not/A)Brand";v="99", "Google Chrome";v="115", "Chromium";v="115"',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  '/index/opurchase/main_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Opurchase->main[ D:\nodcloud-master\nodcloud-master\application\index\controller\Opurchase.php ]
+[ info ] [ VIEW ] D:\nodcloud-master\nodcloud-master/application/index\view\opurchase\main.html [ array (
+) ]
+[ info ] [ BEHAVIOR ] Run addons\pagemore\controller\main @pagemore [ RunTime:0.005445s ]
+[ info ] [ BEHAVIOR ] Run addons\pagemore\controller\main @pagemore [ RunTime:0.000668s ]
+[ info ] [ BEHAVIOR ] Run addons\pagemore\controller\main @pagemore [ RunTime:0.000645s ]
+[ info ] [ BEHAVIOR ] Run addons\pagemore\controller\main @pagemore [ RunTime:0.000593s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001578s ] mysql:host=127.0.0.1;port=3306;dbname=node_cloud;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_action` [ RunTime:0.004585s ]
+[ sql ] [ SQL ] SELECT * FROM `is_action` WHERE  `pid` <> 0  AND `state` = 1 [ RunTime:0.000837s ]
+[ sql ] [ SQL ] SELECT * FROM `is_action` WHERE  `id` IN (1) [ RunTime:0.000358s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_user` [ RunTime:0.003592s ]
+[ sql ] [ SQL ] SELECT * FROM `is_user` WHERE  `id` = 3  AND `token` = 'hEkqs7p44OFBEL3AsUHWHrvbGmg6Cn' LIMIT 1 [ RunTime:0.000471s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_pagemore` [ RunTime:0.003540s ]
+[ sql ] [ SQL ] SELECT * FROM `is_pagemore` WHERE  `name` = 'extend'  AND `type` = 'css' LIMIT 1 [ RunTime:0.000538s ]
+[ sql ] [ SQL ] SELECT * FROM `is_pagemore` WHERE  `name` = 'extend'  AND `type` = 'js' LIMIT 1 [ RunTime:0.000541s ]
+[ sql ] [ SQL ] SELECT * FROM `is_pagemore` WHERE  `name` = 'index|opurchase|main'  AND `type` = 'css' LIMIT 1 [ RunTime:0.000515s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_sys` [ RunTime:0.003299s ]
+[ sql ] [ SQL ] SELECT `name`,`info` FROM `is_sys` WHERE  `name` IN ('user_opt') [ RunTime:0.000422s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_formfield` [ RunTime:0.003138s ]
+[ sql ] [ SQL ] SELECT * FROM `is_formfield` WHERE  `key` = 'opurchase_main' LIMIT 1 [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_formfieldinfo` [ RunTime:0.003179s ]
+[ sql ] [ SQL ] SELECT * FROM `is_formfieldinfo` WHERE  `pid` = 47  AND `show` = 1 ORDER BY `id` ASC [ RunTime:0.000499s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `is_user` WHERE  `id` IN (3) [ RunTime:0.000408s ]
+[ sql ] [ SQL ] SELECT * FROM `is_pagemore` WHERE  `name` = 'index|opurchase|main'  AND `type` = 'js' LIMIT 1 [ RunTime:0.000456s ]
+---------------------------------------------------------------
+[ 2023-08-07T17:39:38+08:00 ] 0.0.0.0 POST localhost/index/service/user_list
+[运行时间：0.081761s] [吞吐率：12.23req/s] [内存消耗：3,325.12kb] [文件加载：53]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Actions @app_init [ RunTime:0.042043s ]
+[ info ] [ LANG ] D:\nodcloud-master\nodcloud-master\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'service',
+    2 => 'user_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'session_id=7448073671f0a461993de8ef9b4f42d56671181a; Nod_User_Id=3; Nod_User_Token=hEkqs7p44OFBEL3AsUHWHrvbGmg6Cn; PHPSESSID=kccsos3ijr8nomsa3ghkekgmij',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/index/opurchase/main.html',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'origin' => 'http://localhost',
+  'sec-ch-ua-platform' => '"Windows"',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36',
+  'sec-ch-ua-mobile' => '?0',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'sec-ch-ua' => '"Not/A)Brand";v="99", "Google Chrome";v="115", "Chromium";v="115"',
+  'content-length' => '20',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  '/index/service/user_list' => '',
+  'page' => '1',
+  'limit' => '5',
+  'data' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Service->user_list[ D:\nodcloud-master\nodcloud-master\application\index\controller\Service.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.024747s ] mysql:host=127.0.0.1;port=3306;dbname=node_cloud;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_action` [ RunTime:0.003356s ]
+[ sql ] [ SQL ] SELECT * FROM `is_action` WHERE  `pid` <> 0  AND `state` = 1 [ RunTime:0.000478s ]
+[ sql ] [ SQL ] SELECT * FROM `is_action` WHERE  `id` IN (1) [ RunTime:0.000335s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_user` [ RunTime:0.003453s ]
+[ sql ] [ SQL ] SELECT * FROM `is_user` WHERE  `id` = 3  AND `token` = 'hEkqs7p44OFBEL3AsUHWHrvbGmg6Cn' LIMIT 1 [ RunTime:0.000627s ]
+[ sql ] [ SQL ] SELECT * FROM `is_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000527s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_auth` [ RunTime:0.003296s ]
+[ sql ] [ SQL ] SELECT * FROM `is_auth` WHERE  `pid` = 3 [ RunTime:0.000496s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `is_user` LIMIT 1 [ RunTime:0.000356s ]
+[ sql ] [ SQL ] SELECT * FROM `is_user` ORDER BY `id` DESC LIMIT 0,5 [ RunTime:0.000336s ]
+---------------------------------------------------------------
+[ 2023-08-07T17:39:40+08:00 ] 0.0.0.0 GET localhost/index/opurchase/form.html
+[运行时间：0.174107s] [吞吐率：5.74req/s] [内存消耗：2,987.45kb] [文件加载：53]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Actions @app_init [ RunTime:0.018286s ]
+[ info ] [ LANG ] D:\nodcloud-master\nodcloud-master\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'opurchase',
+    2 => 'form',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'session_id=7448073671f0a461993de8ef9b4f42d56671181a; Nod_User_Id=3; Nod_User_Token=hEkqs7p44OFBEL3AsUHWHrvbGmg6Cn; PHPSESSID=kccsos3ijr8nomsa3ghkekgmij',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/main.html',
+  'sec-fetch-dest' => 'iframe',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'sec-ch-ua-platform' => '"Windows"',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-ch-ua' => '"Not/A)Brand";v="99", "Google Chrome";v="115", "Chromium";v="115"',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  '/index/opurchase/form_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Opurchase->form[ D:\nodcloud-master\nodcloud-master\application\index\controller\Opurchase.php ]
+[ info ] [ VIEW ] D:\nodcloud-master\nodcloud-master/application/index\view\opurchase\form.html [ array (
+) ]
+[ info ] [ BEHAVIOR ] Run addons\pagemore\controller\main @pagemore [ RunTime:0.005694s ]
+[ info ] [ BEHAVIOR ] Run addons\pagemore\controller\main @pagemore [ RunTime:0.000538s ]
+[ info ] [ BEHAVIOR ] Run addons\pagemore\controller\main @pagemore [ RunTime:0.000521s ]
+[ info ] [ BEHAVIOR ] Run addons\pagemore\controller\main @pagemore [ RunTime:0.000565s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001014s ] mysql:host=127.0.0.1;port=3306;dbname=node_cloud;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_action` [ RunTime:0.003189s ]
+[ sql ] [ SQL ] SELECT * FROM `is_action` WHERE  `pid` <> 0  AND `state` = 1 [ RunTime:0.000495s ]
+[ sql ] [ SQL ] SELECT * FROM `is_action` WHERE  `id` IN (1) [ RunTime:0.000355s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_user` [ RunTime:0.003334s ]
+[ sql ] [ SQL ] SELECT * FROM `is_user` WHERE  `id` = 3  AND `token` = 'hEkqs7p44OFBEL3AsUHWHrvbGmg6Cn' LIMIT 1 [ RunTime:0.000459s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_pagemore` [ RunTime:0.003725s ]
+[ sql ] [ SQL ] SELECT * FROM `is_pagemore` WHERE  `name` = 'extend'  AND `type` = 'css' LIMIT 1 [ RunTime:0.000460s ]
+[ sql ] [ SQL ] SELECT * FROM `is_pagemore` WHERE  `name` = 'extend'  AND `type` = 'js' LIMIT 1 [ RunTime:0.000425s ]
+[ sql ] [ SQL ] SELECT * FROM `is_pagemore` WHERE  `name` = 'index|opurchase|form'  AND `type` = 'css' LIMIT 1 [ RunTime:0.000419s ]
+[ sql ] [ SQL ] SELECT * FROM `is_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000433s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_root` [ RunTime:0.003033s ]
+[ sql ] [ SQL ] SELECT * FROM `is_root` WHERE  `pid` = 3 [ RunTime:0.000558s ]
+[ sql ] [ SQL ] SELECT * FROM `is_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000417s ]
+[ sql ] [ SQL ] SELECT * FROM `is_root` WHERE  `pid` = 3 [ RunTime:0.000586s ]
+[ sql ] [ SQL ] SELECT * FROM `is_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000409s ]
+[ sql ] [ SQL ] SELECT * FROM `is_root` WHERE  `pid` = 3 [ RunTime:0.000527s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_formfield` [ RunTime:0.003229s ]
+[ sql ] [ SQL ] SELECT * FROM `is_formfield` WHERE  `key` = 'opurchase_form' LIMIT 1 [ RunTime:0.000535s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_formfieldinfo` [ RunTime:0.003232s ]
+[ sql ] [ SQL ] SELECT * FROM `is_formfieldinfo` WHERE  `pid` = 48  AND `show` = 1 ORDER BY `id` ASC [ RunTime:0.000748s ]
+[ sql ] [ SQL ] SELECT * FROM `is_pagemore` WHERE  `name` = 'index|opurchase|form'  AND `type` = 'js' LIMIT 1 [ RunTime:0.000438s ]
+---------------------------------------------------------------
+[ 2023-08-07T17:39:40+08:00 ] 0.0.0.0 POST localhost/index/opurchase/form_list
+[运行时间：0.083936s] [吞吐率：11.91req/s] [内存消耗：2,989.35kb] [文件加载：55]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Actions @app_init [ RunTime:0.020118s ]
+[ info ] [ LANG ] D:\nodcloud-master\nodcloud-master\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'opurchase',
+    2 => 'form_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'session_id=7448073671f0a461993de8ef9b4f42d56671181a; Nod_User_Id=3; Nod_User_Token=hEkqs7p44OFBEL3AsUHWHrvbGmg6Cn; PHPSESSID=kccsos3ijr8nomsa3ghkekgmij',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/index/opurchase/form.html',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'origin' => 'http://localhost',
+  'sec-ch-ua-platform' => '"Windows"',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36',
+  'sec-ch-ua-mobile' => '?0',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'sec-ch-ua' => '"Not/A)Brand";v="99", "Google Chrome";v="115", "Chromium";v="115"',
+  'content-length' => '64',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  '/index/opurchase/form_list' => '',
+  'page' => '1',
+  'limit' => '30',
+  'name' => '',
+  'number' => '',
+  'type' => '0',
+  'start_time' => '',
+  'end_time' => '',
+  'data' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Opurchase->form_list[ D:\nodcloud-master\nodcloud-master\application\index\controller\Opurchase.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001046s ] mysql:host=127.0.0.1;port=3306;dbname=node_cloud;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_action` [ RunTime:0.004331s ]
+[ sql ] [ SQL ] SELECT * FROM `is_action` WHERE  `pid` <> 0  AND `state` = 1 [ RunTime:0.000568s ]
+[ sql ] [ SQL ] SELECT * FROM `is_action` WHERE  `id` IN (1) [ RunTime:0.000420s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_user` [ RunTime:0.004362s ]
+[ sql ] [ SQL ] SELECT * FROM `is_user` WHERE  `id` = 3  AND `token` = 'hEkqs7p44OFBEL3AsUHWHrvbGmg6Cn' LIMIT 1 [ RunTime:0.000566s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_opurchaseclass` [ RunTime:0.004302s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_auth` [ RunTime:0.003113s ]
+[ sql ] [ SQL ] SELECT * FROM `is_auth` WHERE  `pid` = 3  AND `name` = 'merchant' LIMIT 1 [ RunTime:0.000560s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_merchant` [ RunTime:0.003590s ]
+[ sql ] [ SQL ] SELECT `id` FROM `is_merchant` [ RunTime:0.000413s ]
+[ sql ] [ SQL ] SELECT * FROM `is_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000390s ]
+[ sql ] [ SQL ] SELECT * FROM `is_auth` WHERE  `pid` = 3 [ RunTime:0.000418s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `is_opurchaseclass` WHERE  `merchant` IN (1) LIMIT 1 [ RunTime:0.015056s ]
+[ sql ] [ SQL ] SELECT * FROM `is_opurchaseclass` WHERE  `merchant` IN (1) ORDER BY `id` DESC LIMIT 0,30 [ RunTime:0.000526s ]
+---------------------------------------------------------------
+[ 2023-08-07T17:39:41+08:00 ] 0.0.0.0 POST localhost/index/service/user_list
+[运行时间：0.082204s] [吞吐率：12.16req/s] [内存消耗：3,325.12kb] [文件加载：53]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Actions @app_init [ RunTime:0.043533s ]
+[ info ] [ LANG ] D:\nodcloud-master\nodcloud-master\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'service',
+    2 => 'user_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'session_id=7448073671f0a461993de8ef9b4f42d56671181a; Nod_User_Id=3; Nod_User_Token=hEkqs7p44OFBEL3AsUHWHrvbGmg6Cn; PHPSESSID=kccsos3ijr8nomsa3ghkekgmij',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/index/opurchase/form.html',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'origin' => 'http://localhost',
+  'sec-ch-ua-platform' => '"Windows"',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36',
+  'sec-ch-ua-mobile' => '?0',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'sec-ch-ua' => '"Not/A)Brand";v="99", "Google Chrome";v="115", "Chromium";v="115"',
+  'content-length' => '20',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  '/index/service/user_list' => '',
+  'page' => '1',
+  'limit' => '5',
+  'data' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Service->user_list[ D:\nodcloud-master\nodcloud-master\application\index\controller\Service.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.025100s ] mysql:host=127.0.0.1;port=3306;dbname=node_cloud;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_action` [ RunTime:0.004288s ]
+[ sql ] [ SQL ] SELECT * FROM `is_action` WHERE  `pid` <> 0  AND `state` = 1 [ RunTime:0.000881s ]
+[ sql ] [ SQL ] SELECT * FROM `is_action` WHERE  `id` IN (1) [ RunTime:0.000332s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_user` [ RunTime:0.003625s ]
+[ sql ] [ SQL ] SELECT * FROM `is_user` WHERE  `id` = 3  AND `token` = 'hEkqs7p44OFBEL3AsUHWHrvbGmg6Cn' LIMIT 1 [ RunTime:0.000528s ]
+[ sql ] [ SQL ] SELECT * FROM `is_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000513s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_auth` [ RunTime:0.003892s ]
+[ sql ] [ SQL ] SELECT * FROM `is_auth` WHERE  `pid` = 3 [ RunTime:0.000542s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `is_user` LIMIT 1 [ RunTime:0.000409s ]
+[ sql ] [ SQL ] SELECT * FROM `is_user` ORDER BY `id` DESC LIMIT 0,5 [ RunTime:0.000354s ]
+---------------------------------------------------------------
+[ 2023-08-07T17:40:37+08:00 ] 0.0.0.0 POST localhost/index/opurchase/form_list
+[运行时间：0.063067s] [吞吐率：15.86req/s] [内存消耗：2,990.17kb] [文件加载：55]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Actions @app_init [ RunTime:0.018801s ]
+[ info ] [ LANG ] D:\nodcloud-master\nodcloud-master\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'opurchase',
+    2 => 'form_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'session_id=7448073671f0a461993de8ef9b4f42d56671181a; Nod_User_Id=3; Nod_User_Token=hEkqs7p44OFBEL3AsUHWHrvbGmg6Cn; PHPSESSID=kccsos3ijr8nomsa3ghkekgmij',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/index/opurchase/form.html',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'origin' => 'http://localhost',
+  'sec-ch-ua-platform' => '"Windows"',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36',
+  'sec-ch-ua-mobile' => '?0',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'sec-ch-ua' => '"Not/A)Brand";v="99", "Google Chrome";v="115", "Chromium";v="115"',
+  'content-length' => '71',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  '/index/opurchase/form_list' => '',
+  'page' => '1',
+  'limit' => '30',
+  'name' => '',
+  'number' => '',
+  'type' => '0',
+  'start_time' => '',
+  'end_time' => '',
+  'data' => 'd',
+  'user' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Opurchase->form_list[ D:\nodcloud-master\nodcloud-master\application\index\controller\Opurchase.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001392s ] mysql:host=127.0.0.1;port=3306;dbname=node_cloud;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_action` [ RunTime:0.003690s ]
+[ sql ] [ SQL ] SELECT * FROM `is_action` WHERE  `pid` <> 0  AND `state` = 1 [ RunTime:0.000435s ]
+[ sql ] [ SQL ] SELECT * FROM `is_action` WHERE  `id` IN (1) [ RunTime:0.000326s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_user` [ RunTime:0.003252s ]
+[ sql ] [ SQL ] SELECT * FROM `is_user` WHERE  `id` = 3  AND `token` = 'hEkqs7p44OFBEL3AsUHWHrvbGmg6Cn' LIMIT 1 [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_opurchaseclass` [ RunTime:0.003036s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_auth` [ RunTime:0.003137s ]
+[ sql ] [ SQL ] SELECT * FROM `is_auth` WHERE  `pid` = 3  AND `name` = 'merchant' LIMIT 1 [ RunTime:0.000582s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_merchant` [ RunTime:0.003285s ]
+[ sql ] [ SQL ] SELECT `id` FROM `is_merchant` [ RunTime:0.000414s ]
+[ sql ] [ SQL ] SELECT * FROM `is_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SELECT * FROM `is_auth` WHERE  `pid` = 3 [ RunTime:0.000413s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `is_opurchaseclass` WHERE  `data` LIKE '%d%'  AND `merchant` IN (1) LIMIT 1 [ RunTime:0.000459s ]
+[ sql ] [ SQL ] SELECT * FROM `is_opurchaseclass` WHERE  `data` LIKE '%d%'  AND `merchant` IN (1) ORDER BY `id` DESC LIMIT 0,30 [ RunTime:0.000485s ]
+---------------------------------------------------------------
+[ 2023-08-07T17:40:41+08:00 ] 0.0.0.0 GET localhost/index/opurchase/exports?name=&number=&type=0&start_time=&end_time=&user=&data=d&mode=1
+[运行时间：0.200720s] [吞吐率：4.98req/s] [内存消耗：2,988.84kb] [文件加载：52]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\index\behavior\Actions @app_init [ RunTime:0.018572s ]
+[ info ] [ LANG ] D:\nodcloud-master\nodcloud-master\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'opurchase',
+    2 => 'exports',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'session_id=7448073671f0a461993de8ef9b4f42d56671181a; Nod_User_Id=3; Nod_User_Token=hEkqs7p44OFBEL3AsUHWHrvbGmg6Cn; PHPSESSID=kccsos3ijr8nomsa3ghkekgmij',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/index/opurchase/form.html',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'sec-ch-ua-platform' => '"Windows"',
+  'sec-ch-ua-mobile' => '?0',
+  'sec-ch-ua' => '"Not/A)Brand";v="99", "Google Chrome";v="115", "Chromium";v="115"',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  '/index/opurchase/exports' => '',
+  'name' => '',
+  'number' => '',
+  'type' => '0',
+  'start_time' => '',
+  'end_time' => '',
+  'user' => '',
+  'data' => 'd',
+  'mode' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Opurchase->exports[ D:\nodcloud-master\nodcloud-master\application\index\controller\Opurchase.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001089s ] mysql:host=127.0.0.1;port=3306;dbname=node_cloud;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_action` [ RunTime:0.003310s ]
+[ sql ] [ SQL ] SELECT * FROM `is_action` WHERE  `pid` <> 0  AND `state` = 1 [ RunTime:0.000488s ]
+[ sql ] [ SQL ] SELECT * FROM `is_action` WHERE  `id` IN (1) [ RunTime:0.000369s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_user` [ RunTime:0.003284s ]
+[ sql ] [ SQL ] SELECT * FROM `is_user` WHERE  `id` = 3  AND `token` = 'hEkqs7p44OFBEL3AsUHWHrvbGmg6Cn' LIMIT 1 [ RunTime:0.000452s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_log` [ RunTime:0.003190s ]
+[ sql ] [ SQL ] INSERT INTO `is_log` (`text` , `user` , `time` , `merchant`) VALUES ('导出采购订单数据' , 3 , 1691401241 , 1) [ RunTime:0.119967s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_opurchaseclass` [ RunTime:0.003458s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_auth` [ RunTime:0.000884s ]
+[ sql ] [ SQL ] SELECT * FROM `is_auth` WHERE  `pid` = 3  AND `name` = 'merchant' LIMIT 1 [ RunTime:0.000474s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_merchant` [ RunTime:0.000782s ]
+[ sql ] [ SQL ] SELECT `id` FROM `is_merchant` [ RunTime:0.000378s ]
+[ sql ] [ SQL ] SELECT * FROM `is_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000449s ]
+[ sql ] [ SQL ] SELECT * FROM `is_auth` WHERE  `pid` = 3 [ RunTime:0.000427s ]
+[ sql ] [ SQL ] SELECT * FROM `is_opurchaseclass` WHERE  `data` LIKE '%d%'  AND `merchant` IN (1) ORDER BY `id` DESC [ RunTime:0.000493s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_formfield` [ RunTime:0.003042s ]
+[ sql ] [ SQL ] SELECT * FROM `is_formfield` WHERE  `key` = 'opurchase_exports' LIMIT 1 [ RunTime:0.000424s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `is_formfieldinfo` [ RunTime:0.003107s ]
+[ sql ] [ SQL ] SELECT * FROM `is_formfieldinfo` WHERE  `pid` = 50  AND `show` = 1 ORDER BY `id` ASC [ RunTime:0.000701s ]
